@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
 
 const VARIANTS = {
-  initial: { y: "-100%" },
-  animate: { y: "0", transition: { duration: 0.5 } },
-  exit: { y: "100%", transition: { duration: 0.5 } },
+  initial: { opacity: 0 },
+  animate: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
+  exit: { opacity: 0, transition: { duration: 1 } },
 };
 
 const Template = ({ children }: { children: ReactNode }) => {
