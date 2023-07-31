@@ -23,7 +23,7 @@ const Template = ({ children }: { children: ReactNode }) => {
         animate="animate"
         exit="exit"
         variants={VARIANTS}
-        className="p-8 border-4 border-cyan-400">
+        className="p-8 border-4 border-green-400">
         {children}
       </motion.div>
     </AnimatePresence>

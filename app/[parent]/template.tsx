@@ -26,8 +26,8 @@ const Template = ({ children }: { children: ReactNode }) => {
           animate="animate"
           exit="exit"
           variants={VARIANTS}
-          className="p-8 border-4 border-cyan-400 h-screen space-y-8">
-          <div className="p-4 border-4 border-cyan-400 flex gap-x-4">
+          className="p-8 border-4 border-yellow-400 h-screen space-y-8">
+          <div className="p-4 border-4 border-yellow-400 flex gap-x-4">
             <Link
               className="flex-1 p-2 rounded bg-cyan-950 flex items-start gap-2 flex-col"
               href={`/${parent}/child-page-one`}>
@@ -53,7 +53,7 @@ const Template = ({ children }: { children: ReactNode }) => {
               Child Page Three
             </Link>
           </div>
-          <div className="p-8 border-4 border-cyan-400">{children}</div>
+          <div className="p-8 border-4 border-green-400">{children}</div>
         </motion.div>
       </AnimatePresence>
     </div>
